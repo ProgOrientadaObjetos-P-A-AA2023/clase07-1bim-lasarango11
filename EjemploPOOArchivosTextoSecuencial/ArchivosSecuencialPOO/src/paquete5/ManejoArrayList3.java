@@ -15,7 +15,7 @@ import paquete1.Profesor;
  */
 public class ManejoArrayList3 {
     public static void main(String[] args) {
-        
+        double promedio =0;
         Calificacion c1 = new Calificacion(10, "Base de Datos");
         Calificacion c2 = new Calificacion(9, "Matemáticas");
         Calificacion c3 = new Calificacion(7, "Lógica");
@@ -37,11 +37,15 @@ public class ManejoArrayList3 {
         
         for (int i = 0; i < calificaciones.size(); i++) {
             System.out.printf("%s - %s - %.2f\n", 
+                    /*OBJETOS DE TIPO CALIFICACION ME VOY A UN OBJETO DE TIPO 
+                    PROFESOR Y OBTENGO EL NOMBRE DEL PROFESOR*/
                     calificaciones.get(i).obtenerProfesor().obtenerNombre(), 
                     calificaciones.get(i).obtenerNombreMateria(),
                     calificaciones.get(i).obtenerNota());
+            promedio = promedio + calificaciones.get(i).obtenerNota();
         }
-        
+        promedio = promedio/calificaciones.size();
+                System.out.printf("El promedio de la calificacion es : %.1f\n",promedio);
         
     }
 }

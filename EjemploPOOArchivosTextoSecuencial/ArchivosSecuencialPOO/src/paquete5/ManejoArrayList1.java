@@ -23,20 +23,24 @@ public class ManejoArrayList1 {
         profesores[1] = prof2;
         
         for (int i = 0; i < profesores.length; i++) {
-            System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
-                    profesores[i].obtenerTipo());
+            
+            Profesor p1 = profesores[i];//es un objeto de tipo profesor
+            
+            System.out.printf("%s - %s\n", p1.obtenerNombre(),
+                    p1.obtenerTipo());
         }
         
         System.out.println("-----------------------------");
         
-        // ArrayList
+        // ArrayList 
         ArrayList <Profesor> profesores2 = new ArrayList<>();
-        profesores2.add(prof1);
+        profesores2.add(prof1);// el add. siempre se envia un objeto de profesor
         profesores2.add(prof2);
         
         for (int i = 0; i < profesores2.size(); i++) {
-            System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
-                    profesores2.get(i).obtenerTipo());
+            Profesor p1 = profesores2.get(i);
+            System.out.printf("%s - %s\n", p1.obtenerNombre(),
+                    p1.obtenerTipo());
         }
         
         System.out.println("-----------------------------");
@@ -44,7 +48,7 @@ public class ManejoArrayList1 {
         Profesor prof3 = new Profesor("Melissa Gilbert", "contratado");
         profesores2.add(prof3);
         
-        for (int i = 0; i < profesores2.size(); i++) {
+        for (int i = 0; i < profesores2.size(); i++) {//
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
                     profesores2.get(i).obtenerTipo());
         }

@@ -7,13 +7,18 @@ package paquete1;
 
 import java.util.Locale;
 
-public class Profesor{
+public class Profesor2{
     private String nombre;
     private String tipo;
+    private int edad;
     
-    public Profesor(String n, String t){
+    public Profesor2(String n, String t,int e){
         nombre = n;
         tipo = t;
+        edad = e;
+    }
+     public void establecerEdad(int e){
+        edad = e;
     }
     
     public void establecerNombre(String n){
@@ -31,10 +36,15 @@ public class Profesor{
     public String obtenerTipo(){
         return tipo;
     }
-
+    public int obtenerEdad(){
+        return edad;
+    }
     @Override
     public String toString() {
-       return String.format("%s - %s",nombre,tipo);
+       return String.format("%s - %s - %d",
+               nombre,
+               tipo,
+               edad );
     }
     
 }
