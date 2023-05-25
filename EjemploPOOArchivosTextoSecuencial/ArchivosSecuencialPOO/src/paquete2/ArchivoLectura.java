@@ -94,7 +94,7 @@ public class ArchivoLectura {
     public String toString() {
         String cadena = "Lista Profesores\n";
         for (int i = 0; i < obtenerLista().size(); i++) {
-            Profesor profTemporal = obtenerLista().get(i); // Obj. Profesor
+            Profesor profTemporal = obtenerLista().get(i); // Obj. Profesor//get = para determinar una posicion
             cadena = String.format("%s(%d) %s %s\n", cadena,
                     i + 1,
                     profTemporal.obtenerNombre(), // obtenerLista().get(i).obtenerNombre(),

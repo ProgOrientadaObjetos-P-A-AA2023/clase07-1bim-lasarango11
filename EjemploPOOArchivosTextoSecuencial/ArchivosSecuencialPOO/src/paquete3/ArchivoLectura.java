@@ -77,7 +77,7 @@ public class ArchivoLectura {
                 // con materia y nota
                 String materia = linea_partes.get(0);
                 double nota = Double.parseDouble(linea_partes.
-                        get(1).replace(",", "."));
+                        get(1).replace(",", "."));// PARA REMPLAXZAR LA COMA POR PUNTO
                 String profesor = linea_partes.get(2);
                 
                 ArrayList<String> cadenaProfesor = new ArrayList<>(

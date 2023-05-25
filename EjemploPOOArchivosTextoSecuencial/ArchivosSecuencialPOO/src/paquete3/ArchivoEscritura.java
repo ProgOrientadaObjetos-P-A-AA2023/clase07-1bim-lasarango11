@@ -62,7 +62,7 @@ public class ArchivoEscritura {
             String cadenaRegistro = String.format("%s;%.2f;%s|%s",
                     p.obtenerNombreMateria(),
                     p.obtenerNota(),
-                    p.obtenerProfesor().obtenerNombre(),
+                    p.obtenerProfesor().obtenerNombre(),          // FORMA LA CADENA 63 A 66
                     p.obtenerProfesor().obtenerTipo()
                     );
             salidaArchivo.format("%s\n", cadenaRegistro);

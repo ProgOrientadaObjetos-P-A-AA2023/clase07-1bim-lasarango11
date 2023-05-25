@@ -27,7 +27,7 @@ public class Ejecutor {
         c2.establecerProfesor(profesor2);
         c3.establecerProfesor(profesor3);
 
-        Calificacion[] lista = {c1, c2, c3};
+        Calificacion[] lista = {c1, c2, c3};// ARREGLO DE CALIFICACION LLAMADO LISTA
 
         ArchivoEscritura archivo = new ArchivoEscritura(nombreArchivo);
 

@@ -27,7 +27,7 @@ public class LecturaArchivoSecuencial {
             try // abre el archivo
             {
                 entrada = new ObjectInputStream(
-                        new FileInputStream(n));
+                        new FileInputStream(n));// NOMBRE ARCHIVO = N
             } // fin de try
             catch (IOException ioException) {
                 System.err.println("Error al abrir el archivo." + ioException);
@@ -47,8 +47,8 @@ public class LecturaArchivoSecuencial {
 
             while (true) {
                 try {
-                    Profesor registro = (Profesor) entrada.readObject();
-                    profesores.add(registro);
+                    Profesor registro = (Profesor) entrada.readObject();//
+                    profesores.add(registro);//
                 } catch (EOFException endOfFileException) {
                     return; // se llegó al fin del archivo
                     // se puede usar el break;

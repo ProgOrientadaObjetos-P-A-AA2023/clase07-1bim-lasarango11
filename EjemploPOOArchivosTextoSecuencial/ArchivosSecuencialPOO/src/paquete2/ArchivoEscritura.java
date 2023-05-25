@@ -61,8 +61,8 @@ public class ArchivoEscritura {
             String cadenaRegistro = String.format("%s;%s",
                     p.obtenerNombre(), p.obtenerTipo());
             
-            salidaArchivo.format("%s\n", cadenaRegistro);
-            salidaArchivo.close();
+            salidaArchivo.format("%s\n", cadenaRegistro);// Guardas una cadena formater 
+            salidaArchivo.close();// cierro la cadena y se guarda 
         } catch (Exception e) {
             System.err.println("Error al crear el archivo.");
             System.err.println(e);
